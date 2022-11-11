@@ -42,7 +42,6 @@ function addItem({}: Props) {
         const tokenId = tx.id; //the id of the NFT minted
         const nft = await tx.data(); // (optional) fetch details of minted NFT
 
-        console.log(receipt, tokenId, nft);
         router.push('/');
 
     } catch (error) {
@@ -50,7 +49,6 @@ function addItem({}: Props) {
     }
   };
     
-console.log(mintNft);
 
 
   return (
